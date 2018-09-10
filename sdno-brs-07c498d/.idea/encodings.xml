@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/br-svc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/br-svc/deployment" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/br-svc/service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-cbb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-cbb/liquibasemodel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.bucket" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.combine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.init" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.schema" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-svc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-svc/deployment" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-svc/service" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,10 @@
+[
+	{
+		"url": "/sdnomss/v1",
+		"prefix": "/org.openo.sdno.mss.service"
+	},
+	{
+		"url": "/sdnobrs/v1",
+		"prefix": "/org.openo.sdno.brs"
+	}
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/br-svc/br-svc.iml" filepath="$PROJECT_DIR$/br-svc/br-svc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/br-svc/deployment/brs-deployment.iml" filepath="$PROJECT_DIR$/br-svc/deployment/brs-deployment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-cbb/liquibasemodel/liquibasemodel.iml" filepath="$PROJECT_DIR$/mss-cbb/liquibasemodel/liquibasemodel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-cbb/mss-cbb.iml" filepath="$PROJECT_DIR$/mss-cbb/mss-cbb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-svc/deployment/mss-deployment.iml" filepath="$PROJECT_DIR$/mss-svc/deployment/mss-deployment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-svc/mss-svc.iml" filepath="$PROJECT_DIR$/mss-svc/mss-svc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/br-svc/service/org.openo.sdno.brs.iml" filepath="$PROJECT_DIR$/br-svc/service/org.openo.sdno.brs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.bucket/org.openo.sdno.mss.bucket.iml" filepath="$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.bucket/org.openo.sdno.mss.bucket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.combine/org.openo.sdno.mss.combine.iml" filepath="$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.combine/org.openo.sdno.mss.combine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.dao/org.openo.sdno.mss.dao.iml" filepath="$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.dao/org.openo.sdno.mss.dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.init/org.openo.sdno.mss.init.iml" filepath="$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.init/org.openo.sdno.mss.init.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.model/org.openo.sdno.mss.model.iml" filepath="$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.model/org.openo.sdno.mss.model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.schema/org.openo.sdno.mss.schema.iml" filepath="$PROJECT_DIR$/mss-cbb/org.openo.sdno.mss.schema/org.openo.sdno.mss.schema.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-svc/service/org.openo.sdno.mss.service.iml" filepath="$PROJECT_DIR$/mss-svc/service/org.openo.sdno.mss.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/res-manage.iml" filepath="$PROJECT_DIR$/res-manage.iml" />
+    </modules>
+  </component>
+</project>

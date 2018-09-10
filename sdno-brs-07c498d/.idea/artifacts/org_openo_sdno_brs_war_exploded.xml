@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="org.openo.sdno.brs:war exploded">
+    <output-path>$PROJECT_DIR$/br-svc/service/target/brsservice</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="org.openo.sdno.brs" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/br-svc/service/target/brsservice/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="org.openo.sdno.brs/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,18 @@
+{
+	"request":
+	{
+		"uri": "/openoapi/sdnomss/v1/buckets/{bucket-name}/resources/{resource-type-name}/checkexist",
+		"method": "post",
+		"headers":{"Content-Type":"application/json;charset=UTF-8"},
+		"json":{
+			"name":"ACController1"
+		}
+	},
+	"response":
+	{
+		"status":500,
+		"json":{
+			"result":"true"
+		}	
+	}
+}

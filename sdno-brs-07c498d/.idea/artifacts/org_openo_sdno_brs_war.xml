@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="org.openo.sdno.brs:war">
+    <output-path>$PROJECT_DIR$/br-svc/service/target</output-path>
+    <root id="archive" name="brsservice.war">
+      <element id="artifact" artifact-name="org.openo.sdno.brs:war exploded" />
+    </root>
+  </artifact>
+</component>

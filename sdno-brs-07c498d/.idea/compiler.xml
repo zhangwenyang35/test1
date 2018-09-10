@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="liquibasemodel" />
+        <module name="org.openo.sdno.brs" />
+        <module name="org.openo.sdno.mss.bucket" />
+        <module name="org.openo.sdno.mss.combine" />
+        <module name="org.openo.sdno.mss.dao" />
+        <module name="org.openo.sdno.mss.init" />
+        <module name="org.openo.sdno.mss.model" />
+        <module name="org.openo.sdno.mss.schema" />
+        <module name="org.openo.sdno.mss.service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="br-svc" target="1.5" />
+      <module name="brs-deployment" target="1.5" />
+      <module name="liquibasemodel" target="1.5" />
+      <module name="mss-cbb" target="1.5" />
+      <module name="mss-deployment" target="1.5" />
+      <module name="mss-svc" target="1.5" />
+      <module name="org.openo.sdno.brs" target="1.5" />
+      <module name="org.openo.sdno.mss.bucket" target="1.5" />
+      <module name="org.openo.sdno.mss.combine" target="1.5" />
+      <module name="org.openo.sdno.mss.dao" target="1.5" />
+      <module name="org.openo.sdno.mss.init" target="1.5" />
+      <module name="org.openo.sdno.mss.model" target="1.5" />
+      <module name="org.openo.sdno.mss.schema" target="1.5" />
+      <module name="org.openo.sdno.mss.service" target="1.5" />
+      <module name="res-manage" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

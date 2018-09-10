@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2016 Huawei Technologies Co., Ltd.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:osgi="http://www.springframework.org/schema/osgi" xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+    xmlns:ctx="http://www.springframework.org/schema/context" xmlns:oms="http://www.huawei.com/schema/oms"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:jdbc.properties" />
+    </bean>
+
+    <bean id="vxlandb" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/vxlandb?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+
+    <bean id="brsdb" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/brsdb?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+    <bean id="compositevpndb" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/compositevpndb?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+    <bean id="l3vpn" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/l3vpn?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+    <bean id="l2vpn" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/l2vpn?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+    <bean id="vpcdb" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/vpcdb?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+    <bean id="osdriverdb" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/osdriverdb?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+    <bean id="ipsecdb" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/ipsecdb?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+    <bean id="acbranchdb" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/acbranchdb?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+    <bean id="servicechaindb" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/servicechaindb?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+    <bean id="scdriverdb" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/scdriverdb?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+    <bean id="nslcmdb" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="jdbc:mysql://${jdbc.host}:${jdbc.port}/nslcmdb?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="50" />
+        <property name="minIdle" value="10" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="3600000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
+    <bean id="dataSource" class="org.openo.sdno.mss.dao.multi.DynamicDataSource">
+        <property name="targetDataSources">
+            <map key-type="java.lang.String">
+                <entry value-ref="brsdb" key="brsdb"></entry>
+                <entry value-ref="l3vpn" key="l3vpn"></entry>
+                <entry value-ref="l2vpn" key="l2vpn"></entry>
+                <entry value-ref="compositevpndb" key="compositevpndb"></entry>
+                <entry value-ref="vxlandb" key="vxlandb"></entry>
+                <entry value-ref="osdriverdb" key="osdriverdb"></entry>
+                <entry value-ref="ipsecdb" key="ipsecdb"></entry>
+                <entry value-ref="acbranchdb" key="acbranchdb"></entry>
+                <entry value-ref="servicechaindb" key="servicechaindb"></entry>
+                <entry value-ref="scdriverdb" key="scdriverdb"></entry>
+                <entry value-ref="vpcdb" key="vpcdb"></entry>
+                <entry value-ref="nslcmdb" key="nslcmdb"></entry>
+            </map>
+        </property>
+        <property name="defaultTargetDataSource" ref="brsdb"></property>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="mapperLocations" value="classpath:sql_data_access.xml" />
+    </bean>
+
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory" />
+        <constructor-arg index="1" value="SIMPLE" />
+    </bean>
+
+    <bean id="springContextUtil" class="org.openo.sdno.mss.dao.util.SpringContextUtil">
+    </bean>
+
+    <bean id="mssModelManagement" class="org.openo.sdno.mss.dao.model.ModelManagement">
+        <property name="metaHanlder" ref="mssMetaHandler"></property>
+        <property name="bucketHandler" ref="mssBucketHandler"></property>
+    </bean>
+
+    <bean id="mssRelaGraphManagement" class="org.openo.sdno.mss.dao.model.RelationGraphMgr">
+        <property name="modelMgr" ref="mssModelManagement"></property>
+    </bean>
+
+    <bean id="invDataHandler" class="org.openo.sdno.mss.dao.impl.InvDataHandlerImpl">
+        <property name="sqlSessionTemplate" ref="sqlSession" />
+        <property name="relationDataHandler" ref="invRelationDataHandler"></property>
+    </bean>
+
+    <bean id="invRelationDataHandler" class="org.openo.sdno.mss.dao.impl.InvRelationDataHandlerImpl">
+        <property name="sqlSessionTemplate" ref="sqlSession" />
+        <property name="invDataHandler" ref="invDataHandler"></property>
+    </bean>
+
+    <bean id="invStatisticsHandler" class="org.openo.sdno.mss.dao.impl.InvStatisticsHandlerImpl">
+        <property name="sqlSessionTemplate" ref="sqlSession" />
+    </bean>
+</beans>

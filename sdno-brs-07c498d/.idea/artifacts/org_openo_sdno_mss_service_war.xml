@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="org.openo.sdno.mss.service:war">
+    <output-path>$PROJECT_DIR$/mss-svc/service/target</output-path>
+    <root id="archive" name="mssservice.war">
+      <element id="artifact" artifact-name="org.openo.sdno.mss.service:war exploded" />
+    </root>
+  </artifact>
+</component>
